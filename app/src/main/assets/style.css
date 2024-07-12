@@ -1,0 +1,194 @@
+.bg-color {
+    background-color: #f37e1f;
+}
+.text-primary {
+    color:darkblue;
+}
+
+body {
+    color:darkblue;
+    font-family:Arial, sans-serif;
+}
+.form-group {
+    padding: 8px 5px 13px 5px;
+    border-radius: 11px;
+}
+.form-control{
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        padding: 7px;
+
+        margin-right: 10px;
+        border: none;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+    border:2px solid #f37e20;
+    box-shadow: unset;
+    background-color: #f2f2f2;
+}
+
+.form-label{
+    margin-bottom: 5px;
+    color: darkblue;
+    font-weight:600;
+    font-size:small;
+}
+
+a{
+    text-decoration:none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%); /* semi-transparent white background */
+    display: none; /* Initially hidden */
+    z-index: 9999; /* Ensure it's above everything else */
+}
+
+.loader {
+    padding:5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid black; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animation to rotate the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-control-grid{
+    width:33px;
+    padding:5px;
+    text-align:center;
+    line-height:1;
+    margin:4px 1px;
+}
+
+
+.btn {
+    background-color: #f37e20;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 13px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 200px;
+}
+.form-div {
+box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.grid-input label {
+    background-color: darkgrey;
+        text-align: center;
+        padding:11px 7px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: 1px solid black;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            width: 35px;
+            height: 29px;
+}
+.grid-input input {
+    background-color:white;
+    border: 2px solid darkgray;
+    border-radius: unset;
+    margin:unset;
+    width: 35px;
+                height: 29px;
+}
+
+h6 {
+font-size:small;
+}
+h1 {
+font-size:small;
+}
+
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #F99D27;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    background-color: #F99D27;
+    border-radius: 50%;
+    animation: loading 1.2s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.3);
+        opacity: 0.3;
+    }
+}
+ .dot:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .dot:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+
+    .dot:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+
+    .dot:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+
+    .dot:nth-child(8) {
+      animation-delay: 0.7s;
+    }
